@@ -26,14 +26,31 @@ namespace Función_IF
         {
            
             // obligar al usuario a que imgrese una edad válida
-            if (int.TryParse(Botónparaedad.Text, out int edad))
+            if (int.TryParse(cajadetexto1.Text, out int dato)& (int.TryParse(cajadetexto2.Text, out int dato2)))
             {
-                MessageBox.Show("su edad es " + Botónparaedad.Text + " años");
+                if (dato > dato2)
+                {
+                    MessageBox.Show(dato + " es mayor que " + dato2);
+                }
+                if (dato < dato2)
+                {
+                    MessageBox.Show(dato + " es menor que " + dato2);
+                }
+                if (dato == dato2)
+                {
+                    MessageBox.Show(dato + " es igual que " + dato2);
+                }
+
             }
             else
             {
-                MessageBox.Show("Por favor ingresa una edad válida.");
+                MessageBox.Show("por favor ingresa un dato válido");
             }
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

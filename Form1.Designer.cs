@@ -30,52 +30,77 @@ namespace Función_IF
         private void InitializeComponent()
         {
             this.label1 = new System.Windows.Forms.Label();
-            this.Botónparaedad = new System.Windows.Forms.TextBox();
+            this.cajadetexto1 = new System.Windows.Forms.TextBox();
             this.Botoncalcular = new System.Windows.Forms.Button();
+            this.label2 = new System.Windows.Forms.Label();
+            this.cajadetexto2 = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Old English Text MT", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(27, 19);
+            this.label1.Location = new System.Drawing.Point(12, 18);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(450, 77);
+            this.label1.Size = new System.Drawing.Size(547, 77);
             this.label1.TabIndex = 0;
-            this.label1.Text = "Ingrese su edad";
+            this.label1.Text = "Ingresa número #1";
             this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
-            // Botónparaedad
+            // cajadetexto1
             // 
-            this.Botónparaedad.Font = new System.Drawing.Font("Old English Text MT", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Botónparaedad.Location = new System.Drawing.Point(509, 36);
-            this.Botónparaedad.Name = "Botónparaedad";
-            this.Botónparaedad.Size = new System.Drawing.Size(511, 50);
-            this.Botónparaedad.TabIndex = 1;
+            this.cajadetexto1.Font = new System.Drawing.Font("Old English Text MT", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cajadetexto1.Location = new System.Drawing.Point(696, 44);
+            this.cajadetexto1.Name = "cajadetexto1";
+            this.cajadetexto1.Size = new System.Drawing.Size(200, 50);
+            this.cajadetexto1.TabIndex = 1;
             // 
             // Botoncalcular
             // 
+            this.Botoncalcular.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.Botoncalcular.Font = new System.Drawing.Font("Old English Text MT", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Botoncalcular.Location = new System.Drawing.Point(436, 125);
+            this.Botoncalcular.Location = new System.Drawing.Point(729, 191);
             this.Botoncalcular.Name = "Botoncalcular";
             this.Botoncalcular.Size = new System.Drawing.Size(136, 39);
             this.Botoncalcular.TabIndex = 2;
             this.Botoncalcular.Text = "Calcular";
-            this.Botoncalcular.UseVisualStyleBackColor = true;
+            this.Botoncalcular.UseVisualStyleBackColor = false;
             this.Botoncalcular.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Old English Text MT", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(12, 95);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(547, 77);
+            this.label2.TabIndex = 3;
+            this.label2.Text = "Ingresa número #2";
+            // 
+            // cajadetexto2
+            // 
+            this.cajadetexto2.Font = new System.Drawing.Font("Old English Text MT", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cajadetexto2.Location = new System.Drawing.Point(696, 124);
+            this.cajadetexto2.Name = "cajadetexto2";
+            this.cajadetexto2.Size = new System.Drawing.Size(200, 46);
+            this.cajadetexto2.TabIndex = 4;
+            this.cajadetexto2.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.DarkKhaki;
             this.ClientSize = new System.Drawing.Size(1067, 554);
+            this.Controls.Add(this.cajadetexto2);
+            this.Controls.Add(this.label2);
             this.Controls.Add(this.Botoncalcular);
-            this.Controls.Add(this.Botónparaedad);
+            this.Controls.Add(this.cajadetexto1);
             this.Controls.Add(this.label1);
             this.Font = new System.Drawing.Font("Old English Text MT", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Form1";
-            this.Text = "Edad";
+            this.Text = "Calculo exámen final";
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -84,8 +109,10 @@ namespace Función_IF
         #endregion
 
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox Botónparaedad;
+        private System.Windows.Forms.TextBox cajadetexto1;
         private System.Windows.Forms.Button Botoncalcular;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.TextBox cajadetexto2;
     }
 }
 
